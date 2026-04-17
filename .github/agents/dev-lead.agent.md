@@ -1,7 +1,16 @@
 ---
 description: "Use when: a request spans multiple concerns — understanding the code, planning changes, and implementing them. Coordinates Researcher, Planner, and Coder subagents end-to-end. Trigger phrases: build this feature, implement, design and implement, end-to-end, plan and code, take this from idea to PR, orchestrate, coordinate."
-name: "- Team Lead"
-tools: [agent, read, search, todo]
+name: "_ Dev Lead"
+tools:
+  [
+    vscode,
+    read,
+    agent,
+    search,
+    azure-mcp/search,
+    com.microsoft/azure/search,
+    todo,
+  ]
 agents: [Researcher, Planner, Clean Coder, Verifier, DevOps]
 model: Claude Opus 4.7
 ---
